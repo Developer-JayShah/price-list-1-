@@ -1,0 +1,132 @@
+*{
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+body{
+    line-height: 1.5;
+    background: linear-gradient(90deg, rgba(247,151,30,1) 0%, rgba(255,210,0,1) 100%);
+}
+p{
+    line-height: 1.6;
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    padding-top: 2rem;
+    margin-left: 12.5%;
+    transition: all 0.5s ease-in;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price-table{
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    padding-bottom: 2.5rem;
+    text-align: center;
+    transition: all 0.35s ease-in-out;
+    margin: 1rem;
+    margin-right: 25%;
+    width: 370px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1); 
+}
+.price-header{
+    background-color: #000;
+    margin-bottom: 2.5rem;
+    padding-top: 2.5rem;
+    position: relative;
+}
+.price-table:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.price-table.popular{
+    position: absolute;
+    top: 0px;
+   
+}
+.price-popular h6{
+           color: #000;
+           background-color: #ffd200;
+           margin-bottom: 0;
+           padding: 0.25rem 3rem;
+           font-size: 1rem;
+           font-weight: 500;
+           text-transform: uppercase;
+}
+.price-plan{
+    margin-bottom: 0.5rem;
+}
+.price-plan h4{
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    margin-top: -2px;
+}
+.line{
+    background-color: #fff;
+    margin: 0 auto;
+    height: 2px;
+    width: 60px;
+}
+.price-pay{
+    margin: 1.75rem 0;
+}
+.price-pay h3{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #ffd200;
+    margin-bottom: 0;
+    margin-top: -15px;
+}
+.price-pay h3 span{
+    font-size: 2rem;
+}
+.price-info{
+    padding: 0 3rem;
+    margin-bottom: 2.5rem;
+}
+.price-info p{
+    margin-bottom: 0;
+}
+.price-info p::after{
+    content: '';
+    display: block;
+    border-bottom: 1px solid #f1f1f1;
+    margin: 1rem 0;
+}
+.price-table .btn{
+    border: none;
+    border-radius: 100px;
+    padding: 0.5rem 2rem;
+    transition: all 0.35s ease-in-out;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: #ffd200;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
+}
+.btn-primary:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+@media only screen and (max-width: 480px){
+    .content{
+        display: block;
+    }
+    .price-table{
+        width: auto;
+        margin: 25px auto;
+    }
+}
